@@ -27,14 +27,14 @@ class ImputerConfig:
         self.neighbors = 6
         self.min_pts = 2
         
-        # interpolation blend factors
-        self.alpha_normal = 0.7
-        self.alpha_stressed = 0.6
+        # interpolation blend factors (slightly tuned)
+        self.alpha_normal = 0.68
+        self.alpha_stressed = 0.58
         self.stress_threshold = 1.0  # above 100% IV, consider row stressed
         
-        # extrapolation params
+        # extrapolation params (slightly tuned)
         self.wing_pts = 2
-        self.damp_low = 0.90
+        self.damp_low = 0.88
         self.damp_high = 1.00
         self.damp_stressed = 1.00
         
